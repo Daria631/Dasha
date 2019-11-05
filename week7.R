@@ -86,7 +86,7 @@ simulation <- function(n, k, h) {
   results <- pbsapply(1:n, function(x) {iteration(k, h)})
   c(mean(results), var(results))
 }
-
+simulation(1000, 10000, 0.6)
 simulation(1000, 10000, 0.5)
 simulation(1000, 10000, 0.4)
 simulation(1000, 10000, 0.3)
